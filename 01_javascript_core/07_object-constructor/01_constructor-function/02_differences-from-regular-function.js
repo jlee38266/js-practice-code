@@ -23,8 +23,8 @@ console.log(student);
 
 function Dog(name, age) {
     console.log('new.target:', new.target);
-    if (!new.target) {
-        return new Dog(name, age);
+    if (!new.target) {                      // new 없이 함수 호출 시 true가 되게 하는 구문
+        return new Dog(name, age);          // new 연산자와 함께 생성자 함수를 재귀 호출하여 생성 된 인스턴스를 반환한다.
     }
 
     this.name = name;
@@ -34,4 +34,4 @@ function Dog(name, age) {
 const dog = Dog('뽀삐', 3);
 console.log(dog);
 
-
+/* 제공되는 빌트인 함수들: Object, String, Number, Boolean, Date, Regex, ... */
