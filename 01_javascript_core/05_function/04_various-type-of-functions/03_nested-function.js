@@ -14,7 +14,7 @@ function outer() {
 
         console.log(outerVal, innerVal);
     }
-
+    
     inner();
 }
 
