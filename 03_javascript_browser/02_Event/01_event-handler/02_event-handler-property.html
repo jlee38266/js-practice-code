@@ -21,18 +21,20 @@
 
         $button.onclick = function () {
             alert('DOM 프로퍼티 방식으로 이벤트 핸들러 등록 완료!');
+            confirm('등록 완료!');
             test1();
             test2();
         }
 
-        $button.onclick = () => alert('DOM 프로퍼티 방식 화살표 함수 등록');
+        // $button.onclick = () => alert('DOM 프로퍼티 방식 화살표 함수 등록');
+        // $button.onclick = () => confirm('DOM 프로퍼티 방식 화살표 함수 등록2');
 
         function test1() {
-        
+        console.log('test1');
         }
 
         function test2() {
-        
+        console.log('test2');
         }
         
     </script>
